@@ -45,7 +45,7 @@ header nav ul li a {
 
 #pagina-actual {
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 8px; /*Poniendo margin entre el texto y el underline */
 }
 
 #texto-principal {
@@ -59,7 +59,7 @@ header nav ul li a {
   padding: 15px 8%;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 15px; /*Espacio entre elementos con display flex*/
 }
 
 .country-section {

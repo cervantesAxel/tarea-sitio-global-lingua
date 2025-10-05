@@ -57,12 +57,12 @@ main {
   width: 100%;
   height: 300px;
   background-image: url("../img/portada-3.jpg");
-  background-size: cover; /* cubre todo el contenedor */
-  background-position-y: -120px; /* centra la imagen */
+  background-size: cover;
+  background-position-y: -120px;
   background-repeat: no-repeat;
-  display: flex;          /* convertimos en flex */
-  justify-content: flex-end;  /* alineamos horizontalmente a la derecha */
-  align-items: flex-start;    /* opcional: top */
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: flex-start; 
 }
 
 .texto-portada-contenedor {
@@ -93,12 +93,11 @@ main {
   margin: 5px;
 }
 
-input[type="radio"] {
+input[type="radio"] { /*Seleccionamos los input que tengan tipo radio*/
   display: none;
 }
 
-input[type="radio"]:checked + .btn-seleccionable {
-  /*Seleccionamos los elementos que estén justo después de un input tipo radio que esté seleccionado, en este caso, los label después de los radio*/
+input[type="radio"]:checked + .btn-seleccionable { /*Seleccionamos los elementos que estén justo después de un input tipo radio que esté seleccionado, en este caso, los label después de los radio*/
   background-color: #143e6a;
   color: #fff;
 }
@@ -111,7 +110,7 @@ input[type="radio"]:checked + .btn-seleccionable {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"] { /*Seleccionamos los input que sean de texto y de numero*/
   border-radius: 4px;
   padding: 10px;
   border-color: #143e6a;
@@ -141,5 +140,5 @@ input[type="submit"] {
   font-size: 1rem;
   padding: 10px;
   margin-top: 10px;
-  cursor: pointer;
+  cursor: pointer; /*Hace que al pasar por encima se vea la manita del cursor*/
 }
