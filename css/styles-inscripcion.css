@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: "Funnel Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e1e5e6;
+}
+
+header {
+  width: 100%;
+  padding: 5px 15%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #143e6a;
+}
+
+header img {
+  max-width: 80px;
+  filter: invert(1);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 25px;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: 100;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+#pagina-actual {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+main {
+  padding: 0 13vw;
+}
+
+#portada {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/portada-3.jpg");
+  background-size: cover; /* cubre todo el contenedor */
+  background-position-y: -120px; /* centra la imagen */
+  background-repeat: no-repeat;
+  display: flex;          /* convertimos en flex */
+  justify-content: flex-end;  /* alineamos horizontalmente a la derecha */
+  align-items: flex-start;    /* opcional: top */
+}
+
+.texto-portada-contenedor {
+  padding-top: 100px;
+  padding-right: 30px;
+}
+
+.texto-portada-contenedor h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#section-forms h3 {
+    font-size: 1.5rem;
+}
+
+.btn-seleccionable {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #143e6a;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #143e6a;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .btn-seleccionable {
+  /*Seleccionamos los elementos que estén justo después de un input tipo radio que esté seleccionado, en este caso, los label después de los radio*/
+  background-color: #143e6a;
+  color: #fff;
+}
+
+.label-pregunta {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  border-radius: 4px;
+  padding: 10px;
+  border-color: #143e6a;
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+  width: 10%;
+}
+
+input[type="text"] {
+  width: 60%;
+}
+
+#contenedor-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+input[type="submit"] {
+  color: white;
+  width: 50%;
+  background-color: #0d995d;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}

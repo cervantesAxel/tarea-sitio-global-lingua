@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Lingua - inscripcion</title>
+    <link rel="stylesheet" href="../css/styles-inscripcion.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="../img/logo.png" alt="" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="inscripcion.html" id="pagina-actual">Inscribirse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article id="portada">
+        <section class="texto-portada-contenedor">
+          <h2>
+            Tu aventura de idiomas <br />
+            Comienza aquí
+          </h2>
+        </section>
+      </article>
+
+      <article id="article-forms">
+        <section id="section-forms">
+          <h3>1. Selecciona tu programa</h3>
+          <form>
+            <label for="idioma" class="label-pregunta">Idioma que deseas tomar:</label><br />
+
+            <input
+              type="radio"
+              name="idioma"
+              id="idioma-ingles"
+              value="ingles"
+            />
+            <label for="idioma-ingles" class="btn-seleccionable"
+              >Inglés global</label
+            >
+
+            <input
+              type="radio"
+              name="idioma"
+              id="idioma-frances"
+              value="frances"
+            />
+            <label for="idioma-frances" class="btn-seleccionable"
+              >Francés cultural</label
+            >
+
+            <input
+              type="radio"
+              name="idioma"
+              id="idioma-aleman"
+              value="aleman"
+            />
+            <label for="idioma-aleman" class="btn-seleccionable"
+              >Alemán técnico</label
+            >
+            <br /><br />
+
+            <label class="label-pregunta">Modalidad:</label><br />
+
+            <input
+              type="radio"
+              name="modalidad"
+              id="presencial"
+              value="presencial"
+            />
+            <label for="presencial" class="btn-seleccionable">Presencial</label>
+
+            <input type="radio" name="modalidad" id="online" value="online" />
+            <label for="online" class="btn-seleccionable">Online</label>
+
+            <input type="radio" name="modalidad" id="mixta" value="mixta" />
+            <label for="mixta" class="btn-seleccionable">Mixta</label
+            ><br /><br />
+
+            <label class="label-pregunta">Sede:</label><br />
+
+            <input type="radio" name="sede" id="mexico" value="mexico" />
+            <label for="mexico" class="btn-seleccionable">León, Gto, MX.</label>
+
+            <input type="radio" name="sede" id="españa" value="españa" />
+            <label for="españa" class="btn-seleccionable">Madrid, España</label>
+
+            <input type="radio" name="sede" id="colombia" value="colombia" />
+            <label for="colombia" class="btn-seleccionable"
+              >Medellín, Colombia</label
+            >
+
+            <h3>2. Tus datos</h3>
+
+            <label for="nombre" class="label-pregunta">Nombre completo:</label><br />
+            <input type="text" name="nombre" id="nombre" /><br />
+
+            <label for="residencia" class="label-pregunta">Lugar de residencia: </label><br />
+            <input type="text" name="residencia" id="residencia" /><br />
+
+            <label for="edad" class="label-pregunta">Edad:</label><br />
+            <input
+              type="number"
+              id="edad"
+              name="edad"
+              min="6"
+              max="120"
+              step="1"
+            /> <br>
+
+            <div id="contenedor-submit">
+                <input type="submit">
+            </div>
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
